@@ -12,7 +12,7 @@ export default function App() {
         <View className="w-full justify-center, items-center min-h-screenh-[85vh] px-4">
               <Image
                 source={images.logo}
-                className="w-[300px] h-[84px] pt-10"
+                className="w-[400px] h-[100px] pt-6"
                 resizeMode='contain'
               />
               <Image
