@@ -28,15 +28,15 @@ export default function App() {
           <Text className="text-sm font-playfdsemibold text-colors-royal-purple mt-7 text-center">
             Read like you've never read before.
           </Text>
+
           <CustomButton
             title="Get Started"
-            handlePress={() => router.push('/sign_in')}
+            handlePress={()=> router.push('/sign_in')}
             containerStyles="w-full mt-7"
           />
         </View>
       </ScrollView>
-      
-      <StatusBar backgroundColor='#b39eb5'style='light'></StatusBar>
+      <StatusBar backgroundColor='#b39eb5'style='light' ></StatusBar>
     </SafeAreaView>
   );
 }
