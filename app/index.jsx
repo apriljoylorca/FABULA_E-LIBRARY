@@ -17,7 +17,7 @@ export default function App() {
           />
           <Image
             source={images.readingGirl}
-            className="w-[200px] h-[180px]"
+            className="w-[250px] h-[200px]"
             resizeMode="fit"
           />
           <View className="relative mt-5">
@@ -26,13 +26,13 @@ export default function App() {
             </Text>
           </View>
           <Text className="text-sm font-playfdsemiboldita text-colors-royal-purple mt-5 text-center rounded">
-            Read like you've never read before...
+            Read like you've never read before...""
           </Text>
 
           <CustomButton
             title="Get Started"
             handlePress={()=> router.push('/sign_in')}
-            containerStyles="w-[200px] mt-7 rounded-3xl"
+            containerStyles="w-[200px] h-[55px] mt-10 rounded-3xl"
           />
         </View>
       </ScrollView>

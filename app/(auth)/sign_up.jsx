@@ -5,15 +5,23 @@ import { images } from '../../constants'
 import FormField from '../../components/FormField'
 import CustomButton from '../../components/CustomButton'
 import { Link } from 'expo-router'
+import { useRouter } from 'expo-router';
 
 const SignUp = () => {
+  const router = useRouter();
   const [form, setForm]=useState({
     username:'',
     email: '',
     password:''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const submit = () =>{}
+  const submit = () => {
+    // Perform any authentication or validation logic here
+    setIsSubmitting(true);
+    // Navigate to homescreen on successful login
+    router.push('/sign_in');
+    setIsSubmitting(false);
+  };
 
   return (
     <SafeAreaView className="bg-colors-lavender h-full">
