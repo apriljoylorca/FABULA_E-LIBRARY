@@ -9,30 +9,30 @@ export default function App() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
       <ScrollView contentContainerStyle={{ height: '100%' }}>
-        <View className="w-full justify-center items-center min-h-[85vh] px-4">
+        <View className="w-full items-center justify-start min-h-[85vh] px-4">
           <Image
             source={images.logo}
-            className="w-[400px] h-[100px] pt-6"
-            resizeMode="contain"
+            className="w-[300px] h-[230px] mt-0"
+            resizeMode="fit"
           />
           <Image
             source={images.readingGirl}
-            className="w-[200px] h-[200px]"
-            resizeMode="stretch"
+            className="w-[200px] h-[180px]"
+            resizeMode="fit"
           />
           <View className="relative mt-5">
-            <Text className="text-2xl text-colors-purple-heart font-playfdbold text-center">
+            <Text className="text-lg text-colors-purple-heart font-playfdsemibold text-center">
               An E-Library made for your convenience. Access and read your favorite books anytime and anywhere.
             </Text>
           </View>
-          <Text className="text-sm font-playfdsemibold text-colors-royal-purple mt-7 text-center">
-            Read like you've never read before.
+          <Text className="text-sm font-playfdsemiboldita text-colors-royal-purple mt-5 text-center rounded">
+            Read like you've never read before...
           </Text>
 
           <CustomButton
             title="Get Started"
             handlePress={()=> router.push('/sign_in')}
-            containerStyles="w-full mt-7"
+            containerStyles="w-[200px] mt-7 rounded-3xl"
           />
         </View>
       </ScrollView>

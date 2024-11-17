@@ -15,14 +15,15 @@ const SignIn = () => {
   const submit = () =>{}
 
   return (
-    <SafeAreaView className="bg-colors-light-pastel-purple h-full">
+    <SafeAreaView className="bg-colors-periwinkle h-full">
       <ScrollView>
-          <View className="w-full justify-center items-center h-full px-4 my-6">
+          <View className="w-full items-center justify-start h-full px-4">
               <Image source={images.logo}
                 resizemode='contain'
-                className="w-[300px] h-[50px] "
+                className="w-[250px] h-[60px] mt-0"
               />
-              <Text className="text-2xl text-colors-white mt-10 font-playfdxbold">Log in to Fabula</Text>
+              <Text className="text-3xl text-colors-white mt-8 font-cdecobold text-center">SIGN IN TO FABULA</Text>
+              <Text className="text-lg text-colors-white mt-1 font-cdecobold text-center">& START YOUR ENDLESS READING ADVENTURE!</Text>
               <FormField
                   title="Email"
                   value={form.email}
@@ -31,13 +32,11 @@ const SignIn = () => {
                   keyboardType="email-address"
               />
               <FormField
-
                   title="Password"
                   value={form.password}
                   handleChangeText={(e) => setForm({ ...form, password: e })}
                   otherStyles="mt-7"
               />
-
               <CustomButton
                   title="Log In"
                   handlePress={submit}
